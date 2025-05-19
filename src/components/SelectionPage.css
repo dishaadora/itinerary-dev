@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll only */
+}
+
+body {
+  background: radial-gradient(circle, #fe5959, #f5c2f3);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2px;
+  transition: transform 1.5s ease;
+}
+.logo-container.shrunk {
+  transform: scale(0.6) translateY(-70px);
+  height: 60px; /* reduce actual container height */
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.logo-img {
+  width: 250px;
+  height: 200px;
+}
+
+.planner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 90vw;
+  max-width: 900px;
+  transition: width 1.5s ease, max-height 1.5s ease;
+  max-height: 600px;
+  overflow: hidden; /* prevent overflow */
+  background-color: #f8dada39;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+}
+.planner-wrapper.expanded {
+  width: 95vw;
+  max-height: 900px;
+}
+.planner-container {
+  width: 100%;
+  text-align: center;
+  background-color: #f8dada00;
+  padding: 10px;
+  /* border: 2px solid #ccc; */
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+  overflow: hidden;
+}
+
+.planner-title {
+  font-size: 65px;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #f5f3f3;
+  padding: 4px 12px;
+}
+
+.generate-button {
+  margin-top: 24px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button.enabled {
+  background-color: #40bad2;
+  color: white;
+  cursor: pointer;
+}
+
+.generate-button.enabled:hover {
+  background: linear-gradient(135deg, #d11ae5, #0e5eb4);
+}
+
+.generate-button.disabled {
+  background-color: #03272fb9;
+  color: white;
+  cursor: not-allowed;
+}

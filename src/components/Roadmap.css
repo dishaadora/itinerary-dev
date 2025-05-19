@@ -1,0 +1,107 @@
+.roadmap-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 1px;
+  gap: 20px;
+  background-color: rgba(127, 255, 212, 0.459);
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.trail-animation-wrapper {
+  width: 1000px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 5%);
+}
+
+.lottie-trail {
+  position: absolute;
+  top: 50%; /* Middle of container */
+  width: 100%;
+  /* transform: translateY(-10%); */
+  
+  z-index: 0;
+  pointer-events: none;
+}
+
+.trail-animation {
+  width: 1000px;
+  height: 600px;
+}
+
+.places-container {
+  display: flex;
+  z-index: 1;
+  gap: 60px; /* Space between icons */
+  /* padding: 0 60px; */
+  flex-direction: row;
+  position: relative;
+  top: 30%;
+  right: 50%;
+  left: -45%;
+  justify-content: center;
+}
+.place-icon > * {
+  pointer-events: none;
+}
+
+.place-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.place-wrapper.above {
+  /* transform: translateY(-80px); */
+  transform: translateY(-140px);
+}
+
+.place-wrapper.below {
+  /* transform: translateY(110px); */
+    transform: translateY(140px); /* less drastic */
+
+}
+
+.place-icon {
+  width: 400px;
+  height: 400px;
+  cursor: grab;
+}
+.place-name {
+  margin-top: -60px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e9e9e9;
+  text-align: center;
+}
+
+.popup {
+  position: absolute;
+  top: -140px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+}

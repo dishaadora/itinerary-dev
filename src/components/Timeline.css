@@ -1,0 +1,80 @@
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-icon {
+  font-size: 3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -2rem;
+  background: #333;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.timeline-icon:hover .tooltip {
+  display: block;
+}
+
+.timeline-arrow-wrapper {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  margin-top: 0.5rem;
+}
+
+.arrow-svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeInArrow 1s forwards;
+}
+
+.arrow-svg.colored {
+  animation-delay: var(--delay);
+}
+
+.arrow-svg.outline {
+  opacity: 1;
+  animation: fadeOutArrow 1s forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes fadeInArrow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutArrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

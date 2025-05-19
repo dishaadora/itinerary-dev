@@ -1,0 +1,41 @@
+
+.place-selector {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.place-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fffefe;
+  text-align: center;
+  border: #fffefe solid 3px;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.place-list {
+  display: grid;
+  gap: 10px;
+}
+
+.place-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #fbfbfb;
+}
+
+.place-item input[type="checkbox"] {
+  margin-top: 3px;
+  cursor: pointer;
+  transform: scale(1.5); /* Increase size by 1.5x */
+  accent-color: white;
+}
+
+.place-item label {
+  cursor: pointer;
+  line-height: 1.4;
+}

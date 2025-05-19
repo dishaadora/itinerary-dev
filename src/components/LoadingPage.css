@@ -1,0 +1,26 @@
+.loading-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.loading-animation {
+  width: 15rem; /* 192px */
+  height: 15rem;
+}
+
+.loading-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.loading-subtext {
+  color: #f0f0f0;
+  margin-top: 0.5rem;
+}

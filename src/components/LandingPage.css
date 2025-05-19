@@ -1,0 +1,119 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+.logo {
+  width: 250px;
+  height: 200px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #2d3748;
+  margin-bottom: 1px;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+  color: #2d3748;
+  margin-bottom: 1px;
+  max-width: 600px;
+}
+
+.description {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.get-started {
+  background-color: #21a48c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.get-started:hover {
+  background-color: #1e40af;
+}
+.contact-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.contact-icon {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1.5px solid black;
+  padding: 12px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  /* box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); */
+  transition: background-color 0.3s ease;
+}
+
+.email {
+  color: #272727;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contact-icon:hover {
+  background-color: #013b79;
+  color: white;
+}
+.contact-icon.active {
+  background-color: #013b79;
+  color: white;
+}
+
+.contact-popup {
+  margin-top: 10px;
+  background-color: white;
+  color: #272727;
+  border: 1.5px solid black;
+  padding: 15px 20px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.contact-popup p {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 8px;
+}
+h2{
+    text-decoration: underline;
+}
+

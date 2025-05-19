@@ -5,7 +5,7 @@ import LoadingScreen from "./components/LoadingScreen"; // adjust the path if ne
 import RoadmapPage from "./pages/RoadmapPage"; // Ensure this import is there
 function App() {
   return (
-    <Router>
+    <Router basename="/itinerary-dev">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/planner" element={<SelectionPage />} />
